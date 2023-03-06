@@ -24,10 +24,10 @@ namespace V2_Crud.Controllers
         [HttpPost("create")]
         public async Task<IActionResult> CreateBucketAsync(string bucketName)
         {
-            var bucketExists = await _s3Client.DoesS3BucketExistAsync  (bucketName);
+            var bucketExists = await _s3Client.DoesS3BucketExistAsync(bucketName);
 
             if (bucketExists) return BadRequest($"Bucket {bucketName} already exists.");
-            
+
             await _s3Client.PutBucketAsync(bucketName);
 
             return Ok($"Bucket {bucketName} CreateInstanceBinder.");
@@ -39,6 +39,15 @@ namespace V2_Crud.Controllers
             var data = await _s3Client.ListBucketsAsync();
             var buckets = data.Buckets.Select(b => b.BucketName);
             return Ok(buckets);
+        }
+
+
+        [HttpDelete("delete")]
+        public async Task<IActionResult> DeleteBucketAsync(string bucketName)
+        {
+            await _s3Client.DeleteBucketAsync(bucketName);
+
+            return Ok($"The bucket {bucketName} was deleted.");
         }
     }
 }
