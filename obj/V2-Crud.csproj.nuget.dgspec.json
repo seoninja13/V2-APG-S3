@@ -1,0 +1,149 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\JR\\FAA\\APG\\V2-APG-S3\\V2-Crud\\V2-Crud.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\JR\\FAA\\APG\\V2-APG-S3\\V2-AwsS3\\V2-AwsS3.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\JR\\FAA\\APG\\V2-APG-S3\\V2-AwsS3\\V2-AwsS3.csproj",
+        "projectName": "V2-AwsS3",
+        "projectPath": "C:\\Users\\JR\\FAA\\APG\\V2-APG-S3\\V2-AwsS3\\V2-AwsS3.csproj",
+        "packagesPath": "C:\\Users\\JR\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\JR\\FAA\\APG\\V2-APG-S3\\V2-AwsS3\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\JR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AWSSDK.S3": {
+              "target": "Package",
+              "version": "[3.7.103.21, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\JR\\FAA\\APG\\V2-APG-S3\\V2-Crud\\V2-Crud.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\JR\\FAA\\APG\\V2-APG-S3\\V2-Crud\\V2-Crud.csproj",
+        "projectName": "V2-Crud",
+        "projectPath": "C:\\Users\\JR\\FAA\\APG\\V2-APG-S3\\V2-Crud\\V2-Crud.csproj",
+        "packagesPath": "C:\\Users\\JR\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\JR\\FAA\\APG\\V2-APG-S3\\V2-Crud\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\JR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\JR\\FAA\\APG\\V2-APG-S3\\V2-AwsS3\\V2-AwsS3.csproj": {
+                "projectPath": "C:\\Users\\JR\\FAA\\APG\\V2-APG-S3\\V2-AwsS3\\V2-AwsS3.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AWSSDK.Extensions.NETCore.Setup": {
+              "target": "Package",
+              "version": "[3.7.4, )"
+            },
+            "AWSSDK.S3": {
+              "target": "Package",
+              "version": "[3.7.103.21, )"
+            },
+            "Microsoft.OpenApi": {
+              "target": "Package",
+              "version": "[1.3.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
