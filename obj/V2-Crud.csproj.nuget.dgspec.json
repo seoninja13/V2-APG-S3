@@ -113,6 +113,10 @@
               "target": "Package",
               "version": "[3.7.103.21, )"
             },
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.OpenApi": {
               "target": "Package",
               "version": "[1.3.1, )"
